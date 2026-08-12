@@ -12,33 +12,31 @@
         content="MedYOUcare is a student-led nonprofit making healthcare education easier to understand, more accessible, and more welcoming."
     >
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+    <!-- NAVIGATION -->
 
     <header class="navbar">
 
         <a href="#home" class="logo-link">
 
             <img
-                src="images/unnamed.png"
+                src="unnamed.png"
                 alt="MedYOUcare logo"
+                class="nav-logo"
             >
 
             <span>MedYOUcare</span>
@@ -48,7 +46,7 @@
 
         <nav class="nav-links">
 
-            <a href="#about">About Us</a>
+            <a href="#about">About</a>
 
             <a href="#what-we-do">What We Do</a>
 
@@ -63,18 +61,10 @@
             href="https://www.instagram.com/MedYOUcare"
             target="_blank"
             rel="noopener noreferrer"
-            class="instagram-button"
+            class="nav-instagram"
         >
             Instagram ↗
         </a>
-
-
-        <button
-            class="menu-button"
-            aria-label="Open navigation"
-        >
-            ☰
-        </button>
 
     </header>
 
@@ -82,32 +72,20 @@
 
     <main>
 
-
-        <!-- =========================
-             HERO
-        ========================== -->
+        <!-- HERO -->
 
         <section class="hero" id="home">
 
-            <div class="hero-decoration decoration-one">
-                +
-            </div>
-
-            <div class="hero-decoration decoration-two">
-                ♡
-            </div>
-
-            <div class="hero-decoration decoration-three">
-                ✦
-            </div>
+            <div class="hero-spark spark-one">✦</div>
+            <div class="hero-spark spark-two">♡</div>
+            <div class="hero-spark spark-three">+</div>
 
 
             <div class="hero-content">
 
+                <div class="hero-copy">
 
-                <div class="hero-text">
-
-                    <p class="little-label">
+                    <p class="eyebrow">
                         STUDENT-LED HEALTH EDUCATION
                     </p>
 
@@ -122,12 +100,9 @@
 
                         Healthcare shouldn't feel confusing.
 
-                        Knowing what a symptom is.
-                        Knowing what questions to ask.
-                        Knowing where to start.
-
-                        We're here to make learning about
-                        health feel a little easier.
+                        We're MedYOUcare, a student-led nonprofit
+                        creating simple, welcoming ways to learn
+                        about health and start conversations that matter.
 
                     </p>
 
@@ -136,7 +111,7 @@
 
                         <a
                             href="#about"
-                            class="primary-button"
+                            class="button button-primary"
                         >
                             Meet MedYOUcare
                             <span>→</span>
@@ -145,7 +120,7 @@
 
                         <a
                             href="#what-we-do"
-                            class="secondary-button"
+                            class="button button-secondary"
                         >
                             What we do
                         </a>
@@ -153,44 +128,42 @@
                     </div>
 
 
-                    <p class="hero-handwriting">
-                        come learn something new with us ♡
+                    <p class="handwriting">
+                        hi, we're MedYOUcare ♡
                     </p>
 
                 </div>
 
 
 
-                <!-- HERO LOGO -->
+                <div class="hero-logo-area">
 
-                <div class="hero-visual">
-
-                    <div class="hero-circle"></div>
+                    <div class="logo-glow"></div>
 
 
-                    <div class="hero-logo-card">
+                    <div class="logo-card">
 
                         <img
-                            src="images/unnamed.png"
-                            alt="MedYOUcare"
+                            src="unnamed.png"
+                            alt="MedYOUcare logo"
                         >
 
                     </div>
 
 
-                    <div class="floating-tag tag-one">
+                    <div class="mini-card mini-one">
                         <span>♡</span>
                         Community
                     </div>
 
 
-                    <div class="floating-tag tag-two">
+                    <div class="mini-card mini-two">
                         <span>✦</span>
                         Education
                     </div>
 
 
-                    <div class="floating-tag tag-three">
+                    <div class="mini-card mini-three">
                         <span>+</span>
                         Awareness
                     </div>
@@ -203,92 +176,53 @@
 
 
 
-        <!-- =========================
-             WHY WE EXIST
-        ========================== -->
+        <!-- INTRO -->
 
-        <section class="why-section">
+        <section class="intro-section">
 
-            <div class="section-container">
+            <div class="content-container">
 
-                <div class="section-label">
+                <div class="section-tag">
                     <span></span>
-                    WHY WE EXIST
+                    A LITTLE SOMETHING
                 </div>
 
 
-                <div class="why-grid">
+                <div class="intro-grid">
+
+                    <h2>
+                        Health information
+                        should feel like
+                        something you can
+                        <span>actually understand.</span>
+                    </h2>
 
 
-                    <div>
+                    <div class="intro-copy">
 
-                        <h2>
-                            Healthcare shouldn't
-                            feel <span>confusing.</span>
-                        </h2>
+                        <p class="big-copy">
 
-                    </div>
-
-
-                    <div class="why-text">
-
-                        <p class="large-paragraph">
-
-                            Knowing what a symptom is.
-                            Knowing what questions to ask.
-                            Knowing when it might be time
-                            to ask for help.
+                            Not a giant wall of medical words.
+                            Not something that makes you scared
+                            to ask a question.
 
                         </p>
 
 
                         <p>
 
-                            Sometimes, health information can
-                            feel like a lot. There are medical
-                            words you don't understand, pages
-                            of information to sort through, and
-                            questions you don't always know
-                            how to ask.
+                            Just information that helps you feel
+                            a little more informed, a little more
+                            comfortable, and maybe a little more
+                            confident about your next step.
 
                         </p>
 
 
-                        <p>
+                        <p class="bold-note">
 
-                            And sometimes, you just want someone
-                            to explain something without making
-                            you feel like you should have already
-                            known it.
-
-                        </p>
-
-
-                        <p>
-
-                            That's one of the reasons we created
-                            MedYOUcare.
-
-                        </p>
-
-
-                        <p>
-
-                            We want to make healthcare education
-                            easier to understand and easier to
-                            connect with, especially when it comes
-                            to the everyday health questions people
-                            don't always talk about.
-
-                        </p>
-
-
-                        <p>
-
-                            <strong>
-                                You deserve to feel informed
-                                about your health. ♡
-                            </strong>
+                            That's the kind of space we're trying
+                            to create. ♡
 
                         </p>
 
@@ -302,23 +236,17 @@
 
 
 
-        <!-- =========================
-             ABOUT US
-        ========================== -->
+        <!-- ABOUT -->
 
-        <section
-            class="about-section"
-            id="about"
-        >
+        <section class="about-section" id="about">
 
-            <div class="section-container">
+            <div class="content-container">
 
-
-                <div class="about-heading">
+                <div class="section-heading">
 
                     <div>
 
-                        <div class="section-label">
+                        <div class="section-tag">
                             <span></span>
                             WHO WE ARE
                         </div>
@@ -333,91 +261,69 @@
 
 
                     <p class="handwriting">
-                        hi, we're MedYOUcare ♡
+                        okay, here's our story ♡
                     </p>
 
                 </div>
 
 
 
-                <div class="about-content">
+                <div class="about-grid">
 
+                    <div class="about-text">
 
-                    <div class="about-main-text">
-
-                        <p class="opening-text">
+                        <p class="opening">
 
                             MedYOUcare is a student-led nonprofit
                             dedicated to making healthcare education
-                            more accessible, understandable,
-                            and community-focused.
+                            more accessible, understandable, and
+                            community-focused.
 
                         </p>
 
 
                         <p>
 
-                            We're students ourselves, and a lot of
-                            what we care about comes from the
-                            communities we've grown up in.
+                            We're students ourselves, and this
+                            project is something that comes from
+                            the communities we've grown up in.
 
                         </p>
 
 
                         <p>
 
-                            We've seen how some communities don't
-                            always have the same access to health
-                            information or resources. Sometimes
-                            even finding a simple, understandable
-                            explanation can be harder than it should be.
+                            We wanted to create a space where
+                            someone could come across a health topic,
+                            be curious about it, and actually find
+                            information that makes sense.
 
                         </p>
 
 
                         <p>
 
-                            We've experienced some of that ourselves,
-                            and it's one of the reasons we wanted to
-                            create MedYOUcare.
+                            Right now, we're doing a lot of that
+                            through social media. We create
+                            educational Instagram posts, TikToks,
+                            videos, graphics, and research-based
+                            content.
 
                         </p>
 
 
                         <p>
 
-                            We focus on health topics that people
-                            might be curious about, worried about,
-                            or simply want to understand better.
+                            But we don't want to stop there.
 
                         </p>
 
 
                         <p>
 
-                            Right now, we're sharing what we're
-                            learning through educational Instagram
-                            posts, TikToks, videos, graphics, and
-                            research-based content.
-
-                        </p>
-
-
-                        <p>
-
-                            But we're hoping to take MedYOUcare
-                            beyond a screen too.
-
-                        </p>
-
-
-                        <p>
-
-                            We're working toward community events,
-                            educational sessions, interactive booths,
-                            health kits, and hands-on activities
-                            that can make learning about health
-                            feel more personal and engaging.
+                            We're hoping to eventually bring
+                            MedYOUcare into schools, libraries,
+                            community centers, and local events too.
 
                         </p>
 
@@ -425,52 +331,31 @@
 
 
 
-                    <div class="about-highlight">
+                    <aside class="about-note">
 
-                        <div class="highlight-icon">
+                        <span class="note-heart">
                             ♡
-                        </div>
+                        </span>
 
 
                         <h3>
-
-                            We want learning about
-                            healthcare to feel
-                            <span>welcoming.</span>
-
+                            You don't have to
+                            know everything
+                            before you start
+                            learning.
                         </h3>
 
 
                         <p>
-
-                            You don't have to know everything
-                            before you start learning.
-
-                        </p>
-
-
-                        <p>
-
-                            You don't have to be afraid to ask
-                            a question.
-
-                        </p>
-
-
-                        <p>
-
                             You can just start somewhere.
-
                         </p>
 
 
-                        <p class="highlight-final">
+                        <small>
+                            and that's okay.
+                        </small>
 
-                            And that's what we're here for.
-
-                        </p>
-
-                    </div>
+                    </aside>
 
                 </div>
 
@@ -480,38 +365,40 @@
 
 
 
-        <!-- =========================
-             THIS IS PERSONAL TO US
-        ========================== -->
+        <!-- PERSONAL -->
 
-        <section class="trust-section">
+        <section class="personal-section">
 
-            <div class="section-container">
+            <div class="content-container">
+
+                <div class="personal-grid">
 
 
-                <div class="trust-heading">
+                    <div class="personal-heading">
 
-                    <div class="section-label">
-                        <span></span>
-                        THIS IS PERSONAL TO US
+                        <div class="section-tag">
+                            <span></span>
+                            THIS IS PERSONAL TO US
+                        </div>
+
+
+                        <h2>
+                            Why we
+                            <span>care. ♡</span>
+                        </h2>
+
+
+                        <p class="handwriting">
+                            this part means a lot to us
+                        </p>
+
                     </div>
 
 
-                    <h2>
-                        Why we
-                        <span>care. ♡</span>
-                    </h2>
 
-                </div>
+                    <div class="personal-story">
 
-
-
-                <div class="trust-grid">
-
-
-                    <div class="trust-story">
-
-                        <p class="large-paragraph">
+                        <p class="big-copy">
 
                             MedYOUcare comes from our own experiences
                             and the communities we grew up in.
@@ -523,142 +410,56 @@
 
                             We've seen how some communities don't
                             always have the same access to health
-                            information, resources, or even simple
-                            explanations about things that affect
-                            them every day.
+                            information or resources. Sometimes the
+                            information exists, but finding something
+                            simple and understandable can still be
+                            difficult.
 
                         </p>
 
 
                         <p>
 
-                            We've experienced some of that ourselves,
-                            and it's one of the reasons we wanted to
-                            create MedYOUcare.
+                            We've experienced parts of that ourselves,
+                            and that's something we want to work toward.
 
                         </p>
 
 
                         <p>
 
-                            We know we can't fix every problem in
-                            healthcare, and that's not what we're
-                            trying to do.
+                            We know we're not going to solve every
+                            problem in healthcare. That's not what
+                            we're trying to do.
 
                         </p>
 
 
                         <p>
 
-                            We're not here to replace doctors or
-                            other healthcare professionals.
+                            We're not here to replace doctors,
+                            nurses, or other healthcare professionals.
 
                         </p>
 
 
                         <p>
 
-                            We just want to help people learn.
+                            We just want to help people learn and
+                            feel a little more comfortable starting
+                            those conversations.
 
                         </p>
 
 
-                        <p>
+                        <div class="personal-final">
 
-                            To make a health topic a little easier
-                            to understand. To help someone recognize
-                            a symptom. To give someone an idea of
-                            what questions they might want to ask.
-                            And hopefully, to make reaching out for
-                            professional help feel a little less
-                            intimidating.
-
-                        </p>
-
-
-                        <p class="trust-final">
+                            <span>♡</span>
 
                             <strong>
-                                We care about this because we've
-                                been there too. ♡
+                                We care about this because
+                                we've been there too.
                             </strong>
-
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="trust-pillars">
-
-
-                        <div class="trust-card">
-
-                            <span>01</span>
-
-                            <div>
-
-                                <h3>
-                                    Student-led
-                                </h3>
-
-                                <p>
-
-                                    We're students who care about
-                                    making health education easier
-                                    for other people to understand.
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="trust-card">
-
-                            <span>02</span>
-
-                            <div>
-
-                                <h3>
-                                    Community-focused
-                                </h3>
-
-                                <p>
-
-                                    The communities around us are
-                                    a big part of why MedYOUcare
-                                    exists.
-
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="trust-card">
-
-                            <span>03</span>
-
-                            <div>
-
-                                <h3>
-                                    We keep learning
-                                </h3>
-
-                                <p>
-
-                                    We research the topics we share
-                                    and care about learning before
-                                    teaching others.
-
-                                </p>
-
-                            </div>
 
                         </div>
 
@@ -672,42 +473,36 @@
 
 
 
-        <!-- =========================
-             WHAT WE DO
-        ========================== -->
+        <!-- WHAT WE DO -->
 
         <section
             class="work-section"
             id="what-we-do"
         >
 
-            <div class="section-container">
+            <div class="content-container">
 
 
-                <div class="work-heading">
+                <div class="section-heading work-heading">
 
                     <div>
 
-                        <div class="section-label">
+                        <div class="section-tag">
                             <span></span>
                             WHAT WE DO
                         </div>
 
 
                         <h2>
-                            What are we
-                            <span>up to?</span>
+                            So... what are we
+                            <span>actually doing?</span>
                         </h2>
 
                     </div>
 
 
                     <p>
-
-                        Here's a little look at what
-                        we're doing now and what we're
-                        hoping to do next.
-
+                        A little look at MedYOUcare right now.
                     </p>
 
                 </div>
@@ -719,27 +514,23 @@
 
                     <article class="work-card">
 
-                        <div class="work-number">
-                            01
-                        </div>
-
-
-                        <div class="work-icon">
+                        <div class="card-top">
+                            <span>01</span>
                             ✦
                         </div>
 
 
                         <h3>
-                            Educational content
+                            We share
                         </h3>
 
 
                         <p>
 
-                            We create Instagram and TikTok
-                            posts and videos about diseases,
-                            symptoms, wellness, and everyday
-                            health topics.
+                            Educational Instagram posts,
+                            TikToks, videos, and graphics
+                            about health topics we're
+                            learning about.
 
                         </p>
 
@@ -749,7 +540,7 @@
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            See what we're posting →
+                            Visit our Instagram →
                         </a>
 
                     </article>
@@ -758,33 +549,25 @@
 
                     <article class="work-card">
 
-                        <div class="work-number">
-                            02
-                        </div>
-
-
-                        <div class="work-icon">
+                        <div class="card-top">
+                            <span>02</span>
                             ♡
                         </div>
 
 
                         <h3>
-                            Research & awareness
+                            We research
                         </h3>
 
 
                         <p>
 
-                            We research health topics and turn
-                            what we learn into posts and resources
-                            that are easier to understand.
+                            We look into diseases, symptoms,
+                            wellness topics, and other health
+                            questions before turning what we
+                            learn into content.
 
                         </p>
-
-
-                        <a href="#future">
-                            See what's next →
-                        </a>
 
                     </article>
 
@@ -792,33 +575,25 @@
 
                     <article class="work-card">
 
-                        <div class="work-number">
-                            03
-                        </div>
-
-
-                        <div class="work-icon">
+                        <div class="card-top">
+                            <span>03</span>
                             +
                         </div>
 
 
                         <h3>
-                            Community outreach
+                            We connect
                         </h3>
 
 
                         <p>
 
                             We're working toward bringing
-                            MedYOUcare into schools, libraries,
-                            community centers, and local events.
+                            health education into schools,
+                            libraries, community centers,
+                            and local events.
 
                         </p>
-
-
-                        <a href="#future">
-                            Come along with us →
-                        </a>
 
                     </article>
 
@@ -826,37 +601,35 @@
 
                     <article class="work-card">
 
-                        <div class="work-number">
-                            04
-                        </div>
-
-
-                        <div class="work-icon">
+                        <div class="card-top">
+                            <span>04</span>
                             ✧
                         </div>
 
 
                         <h3>
-                            Hands-on learning
+                            We create
                         </h3>
 
 
                         <p>
 
-                            We hope to create health kits,
-                            activities, stickers, booths, and
-                            other ways to make learning interactive.
+                            We're hoping to make health kits,
+                            interactive booths, activities,
+                            stickers, and other hands-on
+                            ways to learn.
 
                         </p>
-
-
-                        <a href="#future">
-                            See what's coming →
-                        </a>
 
                     </article>
 
                 </div>
+
+
+                <p class="work-bottom-note">
+                    we're figuring it out as we go,
+                    but we're having fun doing it ♡
+                </p>
 
             </div>
 
@@ -864,24 +637,21 @@
 
 
 
-        <!-- =========================
-             WHAT'S NEXT
-        ========================== -->
+        <!-- FUTURE -->
 
         <section
             class="future-section"
             id="future"
         >
 
-            <div class="section-container">
+            <div class="content-container">
 
 
                 <div class="future-grid">
 
-
                     <div class="future-heading">
 
-                        <div class="section-label">
+                        <div class="section-tag">
                             <span></span>
                             WHAT'S NEXT
                         </div>
@@ -901,79 +671,74 @@
 
 
 
-                    <div class="future-text">
+                    <div class="future-copy">
 
+                        <p class="big-copy">
 
-                        <p class="large-paragraph">
-
-                            Right now, we're sharing what
-                            we're learning online and growing
-                            our community one post at a time.
+                            Right now, MedYOUcare mostly
+                            lives online.
 
                         </p>
 
 
                         <p>
 
-                            But we don't want MedYOUcare to
-                            live only on a screen.
+                            But we have a lot we'd love to
+                            do beyond a screen.
 
                         </p>
 
 
                         <p>
 
-                            We hope to bring health education
-                            into schools, libraries, community
-                            centers, and local events.
+                            We want to bring educational
+                            sessions into schools and
+                            community spaces.
 
                         </p>
 
 
                         <p>
 
-                            We'd love to create interactive
-                            booths, health kits, activities,
-                            and educational sessions where
-                            people can learn and ask questions
-                            in a more hands-on way.
+                            We want to create interactive
+                            activities that people can
+                            actually participate in, not
+                            just read about.
 
                         </p>
 
 
                         <p>
 
-                            We're also hoping to connect with
-                            nonprofits, schools, youth organizations,
-                            and community groups that care about
-                            making health education easier to access.
+                            We want to make health kits
+                            people can take home, create
+                            booths at community events,
+                            and connect with organizations
+                            that care about the same things
+                            we do.
 
                         </p>
 
 
                         <p>
 
-                            There's still a lot we're figuring out.
+                            There's still a lot we're figuring
+                            out.
 
                         </p>
 
 
                         <p>
 
-                            And honestly, we're excited about that.
+                            And honestly, we're excited
+                            about that.
 
                         </p>
 
 
-                        <p>
+                        <p class="future-final">
 
-                            <strong>
-
-                                We're excited to keep learning,
-                                growing, and seeing where
-                                MedYOUcare takes us. ♡
-
-                            </strong>
+                            This is only the beginning. ♡
 
                         </p>
 
@@ -983,14 +748,12 @@
 
 
 
-                <div class="future-roadmap">
+                <div class="timeline">
 
 
-                    <div class="roadmap-item">
+                    <div class="timeline-item">
 
-                        <span>
-                            RIGHT NOW
-                        </span>
+                        <span>RIGHT NOW</span>
 
                         <h3>
                             Online
@@ -1004,19 +767,17 @@
                     </div>
 
 
-                    <div class="roadmap-arrow">
+                    <div class="timeline-line">
                         →
                     </div>
 
 
-                    <div class="roadmap-item">
+                    <div class="timeline-item">
 
-                        <span>
-                            NEXT
-                        </span>
+                        <span>NEXT</span>
 
                         <h3>
-                            In our communities
+                            Community
                         </h3>
 
                         <p>
@@ -1027,23 +788,21 @@
                     </div>
 
 
-                    <div class="roadmap-arrow">
+                    <div class="timeline-line">
                         →
                     </div>
 
 
-                    <div class="roadmap-item">
+                    <div class="timeline-item">
 
-                        <span>
-                            ONE DAY
-                        </span>
+                        <span>ONE DAY</span>
 
                         <h3>
                             Hands-on
                         </h3>
 
                         <p>
-                            Health kits, activities,
+                            Kits, activities,
                             booths, and more.
                         </p>
 
@@ -1057,22 +816,19 @@
 
 
 
-        <!-- =========================
-             COME HANG OUT
-        ========================== -->
+        <!-- SOCIAL -->
 
         <section class="social-section">
 
-            <div class="section-container">
+            <div class="content-container">
 
 
                 <div class="social-box">
 
 
-                    <div class="social-text">
+                    <div class="social-copy">
 
-
-                        <div class="section-label">
+                        <div class="section-tag">
                             <span></span>
                             COME HANG OUT
                         </div>
@@ -1086,8 +842,13 @@
 
                         <p>
 
-                            A lot of what we're doing right now
-                            happens online.
+                            A lot of what we're doing right
+                            now happens online.
+
+                        </p>
+
+
+                        <p>
 
                             Come see what we're learning,
                             what we're making, and what we're
@@ -1096,7 +857,7 @@
                         </p>
 
 
-                        <div class="social-links">
+                        <div class="social-buttons">
 
 
                             <a
@@ -1122,21 +883,15 @@
 
 
 
-                    <div class="social-note">
+                    <div class="hangout-note">
 
-                        <span>
-                            ♡
-                        </span>
-
+                        <span>♡</span>
 
                         <p>
-
                             Come learn.<br>
                             Come ask questions.<br>
                             Come hang out.
-
                         </p>
-
 
                         <small>
                             @MedYOUcare
@@ -1152,24 +907,22 @@
 
 
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
+        <!-- CONTACT -->
 
         <section
-            class="connect-section"
+            class="contact-section"
             id="connect"
         >
 
-            <div class="section-container">
+            <div class="content-container">
 
 
-                <div class="connect-content">
+                <div class="contact-grid">
 
 
                     <div>
 
-                        <div class="section-label">
+                        <div class="section-tag">
                             <span></span>
                             SAY HELLO
                         </div>
@@ -1183,9 +936,7 @@
                     </div>
 
 
-
-                    <div class="connect-text">
-
+                    <div class="contact-copy">
 
                         <p>
 
@@ -1198,8 +949,7 @@
 
                         <p>
 
-                            Send us a message. We'd genuinely
-                            love to hear from you.
+                            We'd genuinely love to hear from you.
 
                         </p>
 
@@ -1208,13 +958,8 @@
                             href="mailto:medyoucare@gmail.com"
                             class="email-button"
                         >
-
                             medyoucare@gmail.com
-
-                            <span>
-                                ↗
-                            </span>
-
+                            <span>↗</span>
                         </a>
 
                     </div>
@@ -1225,26 +970,21 @@
 
         </section>
 
-
     </main>
 
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FOOTER -->
 
     <footer>
-
 
         <div class="footer-container">
 
 
             <div class="footer-brand">
 
-
                 <img
-                    src="images/unnamed.png"
+                    src="unnamed.png"
                     alt="MedYOUcare logo"
                 >
 
@@ -1254,7 +994,6 @@
                     <strong>
                         MedYOUcare
                     </strong>
-
 
                     <p>
                         Your Health, Our Priority.
@@ -1268,21 +1007,11 @@
 
             <div class="footer-links">
 
+                <a href="#about">About</a>
 
-                <a href="#about">
-                    About Us
-                </a>
+                <a href="#what-we-do">What We Do</a>
 
-
-                <a href="#what-we-do">
-                    What We Do
-                </a>
-
-
-                <a href="#future">
-                    What's Next
-                </a>
-
+                <a href="#future">What's Next</a>
 
                 <a
                     href="https://www.instagram.com/MedYOUcare"
@@ -1292,7 +1021,6 @@
                     Instagram
                 </a>
 
-
                 <a
                     href="https://tr.ee/NXpwWMJm6X"
                     target="_blank"
@@ -1300,7 +1028,6 @@
                 >
                     TikTok
                 </a>
-
 
                 <a href="mailto:medyoucare@gmail.com">
                     Email
@@ -1317,7 +1044,6 @@
             <p>
                 © 2026 MedYOUcare
             </p>
-
 
             <p>
                 Your Health, Our Priority. ♡
