@@ -1,69 +1,57 @@
-// =========================
-// MOBILE NAVIGATION
-// =========================
+/* ========================================
+   MEDYOUCARE JAVASCRIPT
+======================================== */
 
-const menuToggle = document.querySelector(".menu-toggle");
+
+/* ---------- MOBILE MENU ---------- */
+
+const menuButton = document.querySelector(".menu-button");
 const navLinks = document.querySelector(".nav-links");
-const navItems = document.querySelectorAll(".nav-links a");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    document.body.classList.toggle("menu-open");
-});
+if (menuButton) {
 
-navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-        document.body.classList.remove("menu-open");
+    menuButton.addEventListener("click", () => {
+
+        navLinks.classList.toggle("mobile-open");
+
     });
-});
+
+}
 
 
-// =========================
-// SCROLL REVEAL
-// =========================
+/* ---------- SIMPLE SCROLL ANIMATION ---------- */
 
-const sections = document.querySelectorAll(
-    ".section, .work-card, .value-card, .impact-card"
+const animatedElements = document.querySelectorAll(
+    ".work-card, .trust-card, .about-highlight, .social-box"
 );
 
-sections.forEach((section) => {
-    section.classList.add("reveal");
-});
 
-const observer = new IntersectionObserver(
+const animationObserver = new IntersectionObserver(
     (entries) => {
+
         entries.forEach((entry) => {
 
             if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
+
+                entry.target.classList.add("show");
+
+                animationObserver.unobserve(entry.target);
+
             }
 
         });
+
     },
     {
-        threshold: 0.12
+        threshold: 0.15
     }
 );
 
-sections.forEach((section) => {
-    observer.observe(section);
-});
 
+animatedElements.forEach((element) => {
 
-// =========================
-// NAVBAR SHADOW ON SCROLL
-// =========================
+    element.classList.add("animate");
 
-const header = document.querySelector(".site-header");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 20) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
+    animationObserver.observe(element);
 
 });
