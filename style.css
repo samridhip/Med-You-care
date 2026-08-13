@@ -1,13 +1,14 @@
-/* =========================
+/* =========================================================
    MEDYOUCARE
-   ========================= */
+   Your health, our priority. 🩵
+   ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap');
 
 
-/* =========================
+/* =========================================================
    GENERAL
-   ========================= */
+   ========================================================= */
 
 html {
     scroll-behavior: smooth;
@@ -19,19 +20,24 @@ html {
 
 body {
     margin: 0;
+
     font-family: "DM Sans", sans-serif;
+
     background: #ffffff;
+
     color: #344454;
+
     line-height: 1.7;
 }
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 section {
@@ -46,30 +52,38 @@ p {
 }
 
 
-/* =========================
+/* =========================================================
    NAVBAR
-   ========================= */
+   ========================================================= */
 
 .navbar {
     position: sticky;
+
     top: 0;
+
     z-index: 100;
 
     background: rgba(255, 255, 255, 0.94);
+
     backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid #edf4f8;
+    border-bottom: 1px solid #eaf3f8;
 }
 
 .nav-container {
     width: min(1100px, 90%);
-    margin: auto;
 
     min-height: 72px;
 
+    margin: auto;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
+    gap: 20px;
 }
 
 
@@ -79,22 +93,28 @@ p {
     width: 48px;
     height: 48px;
 
-    object-fit: cover;
+    object-fit: contain;
 
     border-radius: 50%;
 }
 
 
-/* brand */
+/* navbar brand */
 
 .nav-brand {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 
     font-family: "Fredoka", sans-serif;
+
     font-size: 1.2rem;
+
     font-weight: 600;
+
+    color: #344454;
 }
 
 .nav-brand span {
@@ -102,20 +122,24 @@ p {
 }
 
 
-/* navigation */
+/* navbar links */
 
 .nav-links {
     display: flex;
+
+    align-items: center;
+
     gap: 25px;
 
     font-size: 0.88rem;
+
     font-weight: 600;
 
     color: #687985;
 }
 
 .nav-links a {
-    transition: 0.25s ease;
+    transition: color 0.25s ease;
 }
 
 .nav-links a:hover {
@@ -123,38 +147,40 @@ p {
 }
 
 
-/* =========================
+/* =========================================================
    HERO
-   ========================= */
+   ========================================================= */
 
 .hero {
-    min-height: 88vh;
+    min-height: 86vh;
 
     background: #c5e2f8;
 
     display: flex;
+
     align-items: center;
 
     position: relative;
+
     overflow: hidden;
 }
 
 
-/* soft circles */
+/* soft background circles */
 
 .hero::before {
     content: "";
 
     position: absolute;
 
-    width: 500px;
-    height: 500px;
-
-    background: rgba(255, 255, 255, 0.22);
+    width: 420px;
+    height: 420px;
 
     border-radius: 50%;
 
-    top: -240px;
+    background: rgba(255, 255, 255, 0.22);
+
+    top: -190px;
     right: -120px;
 }
 
@@ -163,17 +189,19 @@ p {
 
     position: absolute;
 
-    width: 350px;
-    height: 350px;
-
-    background: rgba(255, 255, 255, 0.18);
+    width: 280px;
+    height: 280px;
 
     border-radius: 50%;
 
-    bottom: -190px;
+    background: rgba(255, 255, 255, 0.16);
+
+    bottom: -150px;
     left: -100px;
 }
 
+
+/* hero layout */
 
 .hero-content {
     width: min(1100px, 90%);
@@ -186,30 +214,40 @@ p {
 
     align-items: center;
 
-    gap: 55px;
+    gap: 45px;
 
     position: relative;
+
     z-index: 2;
 }
 
 
-/* =========================
+/* =========================================================
    HERO TEXT
-   ========================= */
+   ========================================================= */
 
 .hero-text {
     position: relative;
+
     z-index: 3;
 }
 
 .hero-small {
+    display: inline-block;
+
     font-family: "Caveat", cursive;
 
-    font-size: 1.6rem;
+    font-size: 1.55rem;
 
     color: #4f8db7;
 
-    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.52);
+
+    padding: 4px 15px;
+
+    border-radius: 50px;
+
+    margin-bottom: 16px;
 
     transform: rotate(-2deg);
 }
@@ -217,17 +255,17 @@ p {
 .hero h1 {
     font-family: "Fredoka", sans-serif;
 
-    font-size: clamp(3.5rem, 6vw, 5.8rem);
+    font-size: clamp(3.5rem, 6vw, 5.7rem);
 
-    line-height: 1;
+    line-height: 0.98;
+
+    letter-spacing: -1.5px;
 
     color: #344454;
 
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     font-weight: 600;
-
-    letter-spacing: -1.5px;
 }
 
 .hero h1 span {
@@ -235,7 +273,7 @@ p {
 }
 
 .hero p {
-    max-width: 520px;
+    max-width: 500px;
 
     color: #526d7d;
 
@@ -247,9 +285,9 @@ p {
 }
 
 
-/* =========================
+/* =========================================================
    HERO BUTTONS
-   ========================= */
+   ========================================================= */
 
 .hero-buttons {
     display: flex;
@@ -260,7 +298,11 @@ p {
 }
 
 .button {
-    display: inline-block;
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
 
     padding: 13px 21px;
 
@@ -270,7 +312,7 @@ p {
 
     font-weight: 700;
 
-    transition: 0.3s ease;
+    transition: 0.25s ease;
 }
 
 .button-primary {
@@ -278,96 +320,101 @@ p {
 
     color: #4f8db7;
 
-    box-shadow: 0 10px 25px rgba(70, 120, 150, 0.12);
+    box-shadow:
+        0 8px 20px rgba(70, 120, 150, 0.12);
 }
 
 .button-primary:hover {
     transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(70, 120, 150, 0.16);
 }
 
 .button-secondary {
     background: rgba(255, 255, 255, 0.35);
 
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.75);
 
     color: #496272;
 }
 
 .button-secondary:hover {
-    background: white;
+    background: #ffffff;
 
     transform: translateY(-3px);
 }
 
 
-/* =========================
-   CIRCLE LOGO
-   ========================= */
+/* =========================================================
+   HERO LOGO
+   ========================================================= */
 
 .hero-logo {
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
 
-    position: relative;
+    justify-content: center;
 
-    min-height: 450px;
+    min-height: 430px;
+
+    position: relative;
 }
 
 
-/* soft glow */
+/* subtle glow behind logo */
 
 .hero-logo::before {
     content: "";
 
     position: absolute;
 
-    width: 430px;
-    height: 430px;
+    width: 390px;
+    height: 390px;
 
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.28);
-
-    filter: blur(1px);
+    background: rgba(255, 255, 255, 0.25);
 }
 
 
-/* THE CIRCLE */
+/* BIG CIRCULAR LOGO */
 
 .logo-circle {
-    width: 370px;
-    height: 370px;
+    width: 350px;
+    height: 350px;
 
-    background: white;
+    background: #ffffff;
 
     border-radius: 50%;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
-    padding: 38px;
+    padding: 35px;
 
     position: relative;
 
-    z-index: 2;
+    z-index: 3;
+
+    border: 7px solid rgba(255, 255, 255, 0.78);
 
     box-shadow:
-        0 25px 60px rgba(70, 120, 150, 0.18);
+        0 20px 50px rgba(70, 120, 150, 0.16);
 
     transform: rotate(-2deg);
 
-    transition: 0.35s ease;
+    transition: 0.3s ease;
 
     overflow: hidden;
 }
 
 .logo-circle:hover {
-    transform: rotate(0deg) translateY(-7px);
+    transform: rotate(0deg) translateY(-5px);
 }
 
 .logo-circle img {
@@ -380,56 +427,59 @@ p {
 }
 
 
-/* =========================
-   LITTLE HERO ACCENTS
-   ========================= */
+/* =========================================================
+   TINY HERO DECORATIONS
+   ========================================================= */
 
 .decor {
     position: absolute;
 
+    z-index: 4;
+
     color: #4f8db7;
 
-    opacity: 0.7;
-
-    z-index: 3;
+    opacity: 0.62;
 
     pointer-events: none;
 }
 
 .decor-star {
-    font-size: 1.4rem;
+    top: 17%;
 
-    top: 15%;
-    right: 8%;
+    right: 12%;
 
-    transform: rotate(12deg);
+    font-size: 1.3rem;
+
+    transform: rotate(10deg);
 }
 
 .decor-flower {
-    font-size: 1.8rem;
+    bottom: 14%;
 
-    bottom: 15%;
-    left: 5%;
+    left: 10%;
+
+    font-size: 1.5rem;
 
     transform: rotate(-8deg);
 }
 
 .decor-heart {
-    font-size: 1.5rem;
+    top: 29%;
 
-    top: 30%;
-    left: 4%;
+    left: 8%;
 
-    transform: rotate(-8deg);
+    font-size: 1.2rem;
 }
 
 
-/* =========================
-   SECTION STYLING
-   ========================= */
+/* =========================================================
+   GENERAL SECTION STYLING
+   ========================================================= */
 
 .section {
     background: #ffffff;
+
+    position: relative;
 }
 
 .section-soft {
@@ -446,6 +496,9 @@ p {
     margin: auto;
 }
 
+
+/* section headings */
+
 .section-title {
     max-width: 650px;
 
@@ -453,17 +506,25 @@ p {
 }
 
 .section-label {
+    display: inline-block;
+
     font-size: 0.72rem;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 
     text-transform: uppercase;
 
-    color: #6da0bd;
+    color: #4f8db7;
+
+    background: #eaf5fc;
+
+    padding: 5px 13px;
+
+    border-radius: 50px;
 
     font-weight: 800;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .section-title h2 {
@@ -476,6 +537,24 @@ p {
     color: #344454;
 
     margin-bottom: 15px;
+
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+
+    display: block;
+
+    width: 48px;
+
+    height: 4px;
+
+    background: #c5e2f8;
+
+    border-radius: 50%;
+
+    margin-top: 9px;
 }
 
 .section-title p {
@@ -485,9 +564,9 @@ p {
 }
 
 
-/* =========================
-   ABOUT
-   ========================= */
+/* =========================================================
+   ABOUT / WHO WE ARE
+   ========================================================= */
 
 .about-grid {
     display: grid;
@@ -506,7 +585,11 @@ p {
 }
 
 .about-note {
-    background: #c5e2f8;
+    background: linear-gradient(
+        135deg,
+        #c5e2f8,
+        #eaf5fc
+    );
 
     padding: 35px;
 
@@ -514,8 +597,26 @@ p {
 
     transform: rotate(1deg);
 
+    border: 2px solid rgba(255, 255, 255, 0.75);
+
     box-shadow:
         0 18px 40px rgba(70, 120, 150, 0.09);
+
+    position: relative;
+}
+
+.about-note::before {
+    content: "✦";
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 20px;
+
+    color: #4f8db7;
+
+    font-size: 1.3rem;
 }
 
 .about-note p {
@@ -531,9 +632,9 @@ p {
 }
 
 
-/* =========================
-   STORY
-   ========================= */
+/* =========================================================
+   OUR STORY
+   ========================================================= */
 
 .story {
     background: #f7fbfe;
@@ -544,11 +645,13 @@ p {
 
     margin: auto;
 
-    background: white;
+    background: #ffffff;
 
     padding: 50px;
 
     border-radius: 32px;
+
+    border: 1px solid #e4f2fa;
 
     box-shadow:
         0 18px 50px rgba(70, 120, 150, 0.07);
@@ -562,6 +665,7 @@ p {
     position: absolute;
 
     top: -17px;
+
     left: 30px;
 
     background: #c5e2f8;
@@ -579,6 +683,20 @@ p {
     transform: rotate(-3deg);
 }
 
+.story-card::after {
+    content: "♡";
+
+    position: absolute;
+
+    right: 25px;
+
+    bottom: 15px;
+
+    color: #c5e2f8;
+
+    font-size: 3rem;
+}
+
 .story-card p {
     color: #667985;
 
@@ -586,9 +704,9 @@ p {
 }
 
 
-/* =========================
+/* =========================================================
    WHAT WE DO
-   ========================= */
+   ========================================================= */
 
 .what-grid {
     display: grid;
@@ -599,19 +717,39 @@ p {
 }
 
 .what-card {
-    background: #f7fbfe;
+    background: #f8fcff;
 
-    border: 1px solid #e7f2f8;
+    border: 1px solid #dceff8;
 
     border-radius: 25px;
 
     padding: 28px;
 
     transition: 0.3s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.what-card::after {
+    content: "✧";
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    color: #c5e2f8;
+
+    font-size: 1.4rem;
 }
 
 .what-card:hover {
     transform: translateY(-5px);
+
+    border-color: #c5e2f8;
 
     box-shadow:
         0 15px 35px rgba(70, 120, 150, 0.08);
@@ -625,12 +763,18 @@ p {
 
     background: #c5e2f8;
 
+    color: #4f8db7;
+
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     margin-bottom: 15px;
+
+    box-shadow:
+        0 6px 15px rgba(79, 141, 183, 0.10);
 }
 
 .what-card h3 {
@@ -654,9 +798,9 @@ p {
 }
 
 
-/* =========================
+/* =========================================================
    MISSION
-   ========================= */
+   ========================================================= */
 
 .mission {
     background: #c5e2f8;
@@ -668,10 +812,44 @@ p {
     overflow: hidden;
 }
 
+.mission::before {
+    content: "✦     ♡     ✿";
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 8%;
+
+    color: rgba(79, 141, 183, 0.25);
+
+    font-family: "Caveat", cursive;
+
+    font-size: 1.5rem;
+}
+
+.mission::after {
+    content: "✿     ✦";
+
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 8%;
+
+    color: rgba(79, 141, 183, 0.22);
+
+    font-size: 1.4rem;
+}
+
 .mission-content {
     width: min(780px, 90%);
 
     margin: auto;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 .mission h2 {
@@ -693,12 +871,12 @@ p {
 }
 
 
-/* =========================
+/* =========================================================
    PERSONAL TWIST
-   ========================= */
+   ========================================================= */
 
 .personal {
-    background: white;
+    background: #ffffff;
 }
 
 .personal-card {
@@ -712,9 +890,38 @@ p {
 
     border-radius: 35px;
 
+    border: 1px solid #e1f1f9;
+
+    box-shadow:
+        0 15px 45px rgba(79, 141, 183, 0.06);
+
     position: relative;
 
-    overflow: hidden;
+    overflow: visible;
+}
+
+.personal-card::before {
+    content: "a little more about us ♡";
+
+    position: absolute;
+
+    top: -16px;
+
+    left: 30px;
+
+    background: #c5e2f8;
+
+    color: #4f7188;
+
+    padding: 6px 15px;
+
+    border-radius: 50px;
+
+    font-family: "Caveat", cursive;
+
+    font-size: 1.1rem;
+
+    transform: rotate(-2deg);
 }
 
 .personal-card::after {
@@ -722,7 +929,7 @@ p {
 
     position: absolute;
 
-    right: 35px;
+    right: 30px;
 
     bottom: 5px;
 
@@ -760,12 +967,16 @@ p {
 }
 
 
-/* =========================
-   SOCIAL
-   ========================= */
+/* =========================================================
+   SOCIAL MEDIA
+   ========================================================= */
 
 .social {
-    background: #eaf5fc;
+    background: linear-gradient(
+        135deg,
+        #eaf5fc,
+        #f7fbfe
+    );
 
     text-align: center;
 }
@@ -775,11 +986,13 @@ p {
 
     margin: auto;
 
-    background: white;
+    background: #ffffff;
 
     padding: 50px 35px;
 
     border-radius: 32px;
+
+    border: 1px solid #dceff8;
 
     box-shadow:
         0 18px 50px rgba(70, 120, 150, 0.07);
@@ -791,6 +1004,8 @@ p {
     font-size: clamp(2.3rem, 5vw, 3.6rem);
 
     color: #344454;
+
+    margin-bottom: 15px;
 }
 
 .social-card p {
@@ -816,6 +1031,8 @@ p {
 
     color: #4f7188;
 
+    border: 1px solid rgba(79, 141, 183, 0.08);
+
     padding: 12px 21px;
 
     border-radius: 50px;
@@ -824,24 +1041,29 @@ p {
 
     font-size: 0.88rem;
 
+    box-shadow:
+        0 7px 18px rgba(79, 141, 183, 0.07);
+
     transition: 0.3s ease;
 }
 
 .social-link:hover {
-    transform: translateY(-3px);
+    background: #4f8db7;
 
-    background: #b5d9ef;
+    color: #ffffff;
+
+    transform: translateY(-4px);
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT
-   ========================= */
+   ========================================================= */
 
 .contact {
     text-align: center;
 
-    background: white;
+    background: #ffffff;
 }
 
 .contact-content {
@@ -856,6 +1078,8 @@ p {
     font-size: clamp(2.5rem, 5vw, 4rem);
 
     color: #344454;
+
+    margin-bottom: 15px;
 }
 
 .contact p {
@@ -877,29 +1101,55 @@ p {
 
     font-weight: 800;
 
+    box-shadow:
+        0 8px 20px rgba(79, 141, 183, 0.08);
+
     transition: 0.3s ease;
 }
 
 .email:hover {
-    transform: translateY(-3px);
+    background: #4f8db7;
 
-    box-shadow:
-        0 12px 28px rgba(70, 120, 150, 0.12);
+    color: #ffffff;
+
+    transform: translateY(-3px);
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-   ========================= */
+   ========================================================= */
 
 footer {
     background: #344454;
 
-    color: white;
+    color: #ffffff;
 
     padding: 40px 30px;
 
     text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+footer::before {
+    content: "✿   ✦   ♡   ✦   ✿";
+
+    position: absolute;
+
+    top: 10px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(197, 226, 248, 0.3);
+
+    font-size: 0.8rem;
+
+    letter-spacing: 6px;
 }
 
 .footer-brand {
@@ -938,10 +1188,18 @@ footer {
     color: #dce8ee;
 }
 
+.footer-links a {
+    transition: 0.2s ease;
+}
 
-/* =========================
-   MOBILE
-   ========================= */
+.footer-links a:hover {
+    color: #c5e2f8;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
 
 @media (max-width: 850px) {
 
@@ -950,13 +1208,15 @@ footer {
     }
 
     .nav-links {
-        display: none;
+        gap: 15px;
+
+        font-size: 0.8rem;
     }
 
     .hero {
         min-height: auto;
 
-        padding: 80px 25px;
+        padding: 75px 25px 85px;
     }
 
     .hero-content {
@@ -964,11 +1224,12 @@ footer {
 
         text-align: center;
 
-        gap: 40px;
+        gap: 30px;
     }
 
     .hero p {
         margin-left: auto;
+
         margin-right: auto;
     }
 
@@ -977,23 +1238,25 @@ footer {
     }
 
     .hero-logo {
-        min-height: 380px;
+        min-height: 350px;
     }
 
     .logo-circle {
-        width: 310px;
-        height: 310px;
+        width: 290px;
+        height: 290px;
 
-        padding: 30px;
+        padding: 28px;
     }
 
     .hero-logo::before {
-        width: 360px;
-        height: 360px;
+        width: 330px;
+        height: 330px;
     }
 
     .about-grid {
         grid-template-columns: 1fr;
+
+        gap: 40px;
     }
 
     .what-grid {
@@ -1002,30 +1265,106 @@ footer {
 }
 
 
-@media (max-width: 500px) {
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 65px 18px;
+    }
+
+    .nav-container {
+        min-height: 65px;
+    }
+
+    .nav-logo {
+        width: 43px;
+        height: 43px;
+    }
+
+    .nav-brand {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
 
     .hero h1 {
-        font-size: 3.4rem;
+        font-size: 3.35rem;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-small {
+        font-size: 1.35rem;
+    }
+
+    .hero p {
+        font-size: 0.93rem;
     }
 
     .logo-circle {
-        width: 270px;
-        height: 270px;
+        width: 265px;
+        height: 265px;
 
-        padding: 25px;
+        padding: 24px;
+
+        border-width: 6px;
     }
 
     .hero-logo::before {
-        width: 315px;
-        height: 315px;
+        width: 305px;
+        height: 305px;
     }
 
-    .story-card,
+    .decor-star {
+        right: 5%;
+    }
+
+    .decor-flower {
+        left: 5%;
+    }
+
+    .decor-heart {
+        left: 3%;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+        font-size: 2.35rem;
+    }
+
+    .about-note {
+        padding: 28px;
+    }
+
+    .about-note p {
+        font-size: 1.65rem;
+    }
+
+    .story-card {
+        padding: 38px 25px;
+    }
+
     .personal-card {
-        padding: 35px 25px;
+        width: 94%;
+
+        padding: 40px 25px;
     }
 
     .social-card {
+        width: 94%;
+
         padding: 40px 22px;
+    }
+
+    .footer-links {
+        gap: 12px;
     }
 }
